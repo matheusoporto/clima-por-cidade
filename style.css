@@ -1,0 +1,47 @@
+.conteinerSugestoes {
+            position: relative;
+        }
+
+        #cidade {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #sugestoes {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            background: white;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+
+            max-height: 200px;
+            overflow-y: auto;
+
+            z-index: 10;
+        }
+
+        #sugestoes:empty {
+            display: none;
+        }
+
+        #sugestoes li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #sugestoes li:hover {
+            background: #dbeafe;
+            font-weight: 600;
+        }
+
+        #sugestoes li.selecionada {
+            background: #dbeafe;
+            font-weight: 600;
+        }
